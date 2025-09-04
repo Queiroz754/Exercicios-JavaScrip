@@ -1,13 +1,28 @@
 let num = parseInt(prompt("Digite um numero: "))
 let num1 = parseInt(prompt("Digite um numero: "))
-let operador = parent(prompt("Digite um operador:[+,-,/,*]"))
-let resultado = (num operador num1)
+let operador = prompt("Digite um operador:[+,-,/,*]")
+let resultado = 0
 
-if (operador != "+" && operador != "-" && operador != "/" && operador != "*") {
-    alert ("Operador logico invalido")
-} else {
-    
+if (operador == "+") {
+    resultado = num + num1
+    alert(`O resultado de ${num} e ${num1} é ${resultado}`)
 }
+else if (operador == "-") {
+    resultado = num - num1
+    alert(`O resultado de ${num} e ${num1} é ${resultado}`)
+}
+else if (operador == "*") {
+    resultado = num * num1
+    alert(`O resultado de ${num} e ${num1} é ${resultado}`)
+}
+else if (operador == "/") {
+    resultado = num / num1
+    alert(`O resultado de ${num} e ${num1} é ${resultado}`)
+}
+else {
+    alert("Operador invalido!")
+}
+
 
 
 
