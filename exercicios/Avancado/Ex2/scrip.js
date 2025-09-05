@@ -4,7 +4,7 @@ if (nota <100 || nota < 0) {
     console.log("Digite novamente uma nota valida")
 }
 else{
-    switch (nota){
+    switch (true){
         case (nota >= 90):
         console.log("A")
         break
