@@ -1,30 +1,9 @@
-let nota = prompt("insira a nota")
+let numUser = parseInt(prompt("insira o numero que voçê quer calcular o fatorial: "))
+let total = numUser*numUser
 
-if (nota <100 || nota < 0) {
-    console.log("Digite novamente uma nota valida")
-}
-else{
-    switch (true){
-        case (nota >= 90):
-        console.log("A")
-        break
+for (let i = 1; i != numUser ; i++ ){
+    total *= i
 
-        case (nota >= 80):
-        console.log("B")
-        break
-        
-        case (nota >= 70):
-        console.log("C")
-        break
-        
-        case (nota >= 60):
-        console.log("D")
-        break
-
-        default:
-        console.log("F")
-    }
 }
 
-
-
+alert(`O fatorial de ${numUser} é ${total}`)

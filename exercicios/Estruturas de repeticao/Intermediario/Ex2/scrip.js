@@ -1,8 +1,9 @@
 let numRandom =parseInt( Math.random() * 100)
-alert(numRandom)
+let numUser = 0
+
  
- while (numUser != numRandom) {
-    let numUser = parseInt(prompt("insira um numero inteiro: "))
+ while ( numUser != numRandom ) {
+     numUser = parseInt(prompt("insira um numero inteiro: "))
 
     if (numUser > numRandom){
          alert("O numero é menor")

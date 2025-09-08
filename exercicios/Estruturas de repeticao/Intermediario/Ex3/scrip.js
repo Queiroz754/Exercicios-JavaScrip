@@ -1,9 +1,7 @@
-valorCompra = parseInt(prompt("Qual o valor da compra? "))
-precoDesconto = 100
-desconto = .1
+let numUser = parseInt(prompt("insira um numero inteiro: "))
 
-if (valorCompra > precoDesconto) {
-   valorCompra = valorCompra-(valorCompra*desconto)
+while (numUser != 0) {
+    numUser--
+    console.log(numUser)
 }
- alert(`Você pagara  R$${valorCompra}`)
 
