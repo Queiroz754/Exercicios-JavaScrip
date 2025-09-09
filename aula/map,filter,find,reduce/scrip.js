@@ -47,9 +47,9 @@
 
 //*let numeros = [5,8,12,20,3,15]
 
-//* let encontrado = numeros.find(numero => numero > 10)
+//*let encontrado = numeros.find(numero => numero > 10)
 
-//* console.log(encontrado)
+//*console.log(encontrado)
 
 //* buscar por um nome pela primeira letra 
 //*let nomes = ["Ana", "Bruno", "Carlos", "Eva", "Catia"]
@@ -103,14 +103,54 @@
 //*     acumulador + numero, 0 
 //* )
 //* console.log(Soma)
-const numeros = [10,5,8,20,3]
+//* const numeros = [10,5,8,20,3]
 
-const maiorNumero = numeros.reduce((max, numero) => {
-    if (numero > max) {
-        return numero
-    } else {
-        return max
-    }
-}, numero[0])
+//* const maiorNumero = numeros.reduce((max, numero) => {
+//*     if (numero > max) {
+//*         return numero
+//*     } else {
+//*         return max
+//*     }
+//* }, numero[0])
 
-console.log(maiorNumero)
+//* console.log(maiorNumero)
+
+//* const palavras = ["maçã","banana", "maçã", "laranja", "banana","maçã"]
+
+//* const contagem = palavras.reduce((acumulador, palavra) => {
+//*     acumulador[palavra] = (acumulador[palavra] || 0) + 1
+//*     return acumulador
+//* },{})
+
+//* Calcular média de notas
+
+//* const notas = [7,8,9,6,10]
+
+//* const media = notas.reduce((total,nota) => total+ nota,0) / notas.length
+
+//* console.log(media)
+
+//* USO COMBINADO
+
+const usuarios = [
+    {id: 1, nome: "Alice", idade: 25},
+    {id: 2, nome: "Bob", idade: 30},
+    {id: 3, nome: "Alison", idade: 20}
+]
+
+//* Filtrar usuario com idade maior que 21
+const maioresDeIdade = usuarios.filter(usuario => usuario.idade > 21)
+
+//* Encontrar o primeiro usuario com idade maior que 21
+const usuarioIdade = usuarios.find(usuario => usuario.idade > 21)
+
+//* Criar um array apenas com nomes de usuarios
+const nomesUsuarios = usuarios.map(usuario => usuario.nome)
+
+//* Somar todas as idades dos usuarios usando o reduce
+const somarIdades = usuarios.reduce((total,usuario) => total + usuario.idade)
+
+console.log(maioresDeIdade)
+console.log(usuarioIdade)
+console.log(nomesUsuarios)
+console.log(somarIdades)
